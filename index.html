@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./src/output.css">
+    <!-- <link rel="stylesheet" href="./src/output.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body>
-    <div class="container flex mx-auto bg-gray-900 text-white my-4">
+    <div class="container flex mx-auto bg-black text-white my-4">
         <div class="first w-[75%]">
             <div class="logo invert m-3">
                 <svg viewBox="0 0 24 24" aria-hidden="true"
@@ -35,32 +37,57 @@
                     <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i
                             class=" fa-solid fa-bell text-xl"></i>Notofications
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i
-                            class=" fa-solid fa-house text-xl"></i>Grok
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i class="
+                        fa-solid fa-layer-group"></i></i>Grok
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i
-                            class=" fa-solid fa-house text-xl"></i>Lists
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i class="
+                        fa-solid fa-list"></i></i>Lists
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i
-                            class=" fa-solid fa-house text-xl"></i>Bookmarks
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i class="
+                        fa-solid fa-bookmark"></i></i>Bookmarks
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i
-                            class=" fa-solid fa-house text-xl"></i>Communities</li>
-                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i
-                            class=" fa-solid fa-house text-xl"></i>Premium
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i class="
+                        fa-solid fa-church"></i></i>Communities</li>
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i class="
+                        fa-solid fa-coins"></i></i>Premium
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i
-                            class=" fa-solid fa-house text-xl"></i>Profile
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i class="
+                        fa-solid fa-user"></i></i>Profile
                     </li>
-                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i
-                            class=" fa-solid fa-house text-xl"></i>More
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2""><i class="
+                        fa-solid fa-circle-info"></i></i>More
                     </li>
                 </ul>
             </div>
 
         </div>
 
-        <div class="second w-full border-1 border-x-gray-500 border-y-black">bb</div>
+        <div class="second w-full border-[1px] border-x-gray-500 border-y-black">
+            <div class="top flex p-3 items-center relative cursor-pointer">
+                <div class="absolute bg-blue-700 w-16 h-1 bottom-0 left-[18%] rounded-full z-10"></div>
+                <div class="left w-1/2 bg-amber-5000 flex justify-center font-bold text-lg">For you
+                </div>
+                <div class="right w-1/2 bg-red-6000 flex justify-center font-bold text-lg">Following</div>
+                <div class="setting mx-2"><i class="fa-solid fa-gear"></i></div>
+            </div>
+            <div class="bg-gray-500 w-full h-[1px]"></div>
+
+            <div class="whatishapp flex gap-1 my-2.5">
+                <div class="m-3">
+                    <img class="rounded-full w-14"
+                        src="https://pbs.twimg.com/profile_images/1957501461710913536/PWmct6jt_200x200.jpg" alt="">
+                </div>
+                <div class="w-full">
+                    <input class="w-full bg-black text-white my-4 outline-none h-7 text-lg" type="text"
+                        placeholder="What's happening?">
+                    <div class="text-blue-500 flex items-center gap-1 w-full my-2 font-bold"><i
+                            class="fa-solid fa-earth-americas"></i>Everyone can
+                        reply</div>
+                    <div class="bg-gray-600 h-[0.2px] w-[95%] my-3"></div>
+                </div>
+            </div>
+            <hr>
+        </div>
 
 
         <div class="third w-full">
@@ -87,14 +114,47 @@
                 </div>
             </div>
 
-            <div class="who w-1/2 bg-[#16181c] m-3 py-5 rounded-xl space-y-3">
+            <div class="who w-[70%] bg-[#16181c] m-3 py-3 rounded-xl">
 
                 <h1 class="text-xl font-bold px-3">Who to follow</h1>
 
-                <div class="item p-3 px-3 space-y-2">
-                    <div class="text-sm text-gray-400">CodeWithHarry</div>
-                    <div class="text-sm text-gray-400">Akshya Kumar</div>
-                    <div class="text-sm text-gray-400">Amir Khan</div>
+                <div class=" pt-3 pb-2 px-3 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <img class="w-10 border rounded-full" src="./cover.jpg" alt="">
+                        <div>
+                            <div class="font-bold">Seb</div>
+                            <div class="text-sm text-gray-400">@seb</div>
+                        </div>
+                    </div>
+                    <div class="border px-5 py-1 flex items-center rounded-full bg-white text-black cursor-pointer">
+                        Follow
+                    </div>
+                </div>
+                <div class=" p-2 px-3 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <img class="w-10 border rounded-full" src="./cover.jpg" alt="">
+                        <div>
+                            <div class="font-bold">Kanhaiya Kumar</div>
+                            <div class="text-sm text-gray-400">@kanhaiyakumar</div>
+                        </div>
+                    </div>
+                    <div class="border px-5 py-1 flex items-center rounded-full bg-white text-black cursor-pointer">
+                        Follow
+                    </div>
+                </div>
+                <div class=" p-2 pb-5 px-3 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <img class="w-10 border rounded-full" src="./cover.jpg" alt="">
+                        <div>
+                            <div class="font-bold">Asaduddin Owaisi
+                            </div>
+                            <div class="text-sm text-gray-400">@asadowaisi
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border px-5 py-1 flex items-center rounded-full bg-white text-black cursor-pointer">
+                        Follow
+                    </div>
                 </div>
                 <div class="text-blue-800 underline cursor-pointer px-3">Show more</div>
             </div>
