@@ -15,18 +15,18 @@
     <div class="container flex mx-auto bg-black text-white">
         <div class="first w-16 md:w-[75%]">
 
-            <div class="sidebar flex justify-end md:items-end flex-col sticky top-0">
-                <div class=" logo invert m-3 self-start mx-5 md:mx-16">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"
-                        class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk w-6 m-auto">
-                        <g>
-                            <path
-                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-                            </path>
-                        </g>
-                    </svg>
-                </div>
+            <div class="sidebar flex md:items-end flex-col sticky top-0">
                 <ul class="flex flex-col text-xl space-y-2 md:px-11 md:mr-5 font-bold ">
+                    <div class="logo invert self-start m-3">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk w-7">
+                            <g>
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
                     <li
                         class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-4 py-2">
                         <i class="fa-solid fa-house text-xl"></i><span class="hidden md:block">Home</span>
@@ -61,14 +61,14 @@
                         <div class="button">
                             <button
                                 class="bg-white text-xl my-2 text-black w-full py-2 px-4 items-center rounded-full hidden md:block">Post</button>
-                            <button class="md:hidden bg-gray-800 px-3 py-2 rounded-full my-3 mx-2"><i
+                            <button class="md:hidden bg-gray-800 px-3 py-2 rounded-full text-[12px] my-3 mx-3"><i
                                     class="fa-solid fa-pencil"></i></button>
                         </div>
                     </li>
                 </ul>
-                <div class="flex justify-center items-center w-full mt-5">
+                <div class="flex justify-center items-center w-full mt-8 hidden md:flex">
                     <div class="flex items-center gap-3 hover:bg-gray-800 rounded-full cursor-pointer py-2 px-5
-                    pr-0 ml-15">
+                ml-5">
                         <img class="w-10 rounded-full"
                             src="https://pbs.twimg.com/profile_images/1957501461710913536/PWmct6jt_200x200.jpg" alt="">
                         <div>
@@ -85,7 +85,7 @@
         </div>
 
         <div class="second w-full border-[1px] border-x-gray-600 border-y-black">
-            <div class="top flex p-3 items-center relative cursor-pointer">
+            <div class="top flex p-3 items-center sticky top-0 bg-black backdrop-blur-3xl opacity-80 cursor-pointer">
                 <div class="absolute bg-blue-700 w-16 h-1 bottom-0 left-[18%] rounded-full z-10"></div>
                 <div class="left w-1/2 bg-amber-5000 flex justify-center font-bold text-lg">For you
                 </div>
@@ -110,11 +110,11 @@
                     <div class="flex justify-between items-center">
                         <ul class="gap-3 flex text-blue-500">
                             <li><i class="fa-solid fa-image"></i></li>
-                            <li> <i class="fa-solid fa-gift"></i></li>
-                            <li> <i class="fa-solid fa-bars-progress"></i></li>
-                            <li> <i class="fa-solid fa-face-smile"></i></li>
-                            <li> <i class="fa-solid fa-calendar"></i></li>
-                            <li> <i class="fa-regular fa-location-dot"></i></li>
+                            <li><i class="fa-solid fa-gift"></i></li>
+                            <li><i class="fa-solid fa-bars-progress"></i></li>
+                            <li><i class="fa-solid fa-face-smile"></i></li>
+                            <li><i class="fa-solid fa-calendar"></i></li>
+                            <li><i class="fa-solid fa-location-dot"></i></li>
                         </ul>
                         <div class="bg-gray-500 text-black py-1.5 px-5 rounded-full font-bold mr-5">Post</div>
                     </div>
@@ -124,7 +124,7 @@
             <div class="text-blue-500 flex justify-center">Show 366 posts</div>
             <div class="bg-gray-600 h-[0.2px] w-full mb-3 my-1"></div>
 
-            <div class="posts overflow-hidden">
+            <div class="posts">
                 <div class="post">
                     <div class="flex">
                         <div class="m-3 mt-0">
@@ -137,7 +137,6 @@
                                 @cmdhaus
                                 ·
                                 Aug 19</span>
-                            <span class="text-gray-400 text-[13px] ml-52"><i class="fa-solid fa-ellipsis"></i></span>
                             <div class="text-gray-200">name a bigger flop</div>
                             <div class="my-3 m-3 ml-0">
                                 <img class="rounded-xl"
@@ -183,7 +182,6 @@
                                 @Adityapandeydev
                                 ·
                                 19h</span>
-                            <span class="text-gray-400 text-[13px] ml-44"><i class="fa-solid fa-ellipsis"></i></span>
                             <div class="text-gray-200">It’s 4 AM.</div>
                             <div class="text-gray-200">No rich parents.</div>
                             <div class="text-gray-200">No resources.</div>
@@ -234,7 +232,6 @@
                                 class="text-gray-400 text-[13px]">
                                 @Mind_Essentials ·
                                 14h</span>
-                            <span class="text-gray-400 text-[13px] ml-30"><i class="fa-solid fa-ellipsis"></i></span>
                             <div class="my-3 m-3 ml-0">
                                 <img class="rounded-xl" src="./post.jpeg" alt="">
                             </div>
@@ -278,7 +275,6 @@
                                 @krishdotdev
                                 ·
                                 Aug 19</span>
-                            <span class="text-gray-400 text-[13px] ml-46"><i class="fa-solid fa-ellipsis"></i></span>
                             <div class="text-gray-200">This is what exactly vibe coding Looks like.</div>
                             <div class="my-3 m-3 ml-0">
                                 <img class="rounded-xl"
@@ -344,8 +340,8 @@
 
                 <h1 class="text-xl font-bold px-3 mb-3">Who to follow</h1>
 
-                <div class=" py-2 px-3 flex justify-between items-center">
-                    <div class="flex items-center gap-3">
+                <div class=" py-2 px-3 flex justify-between items-center hover:bg-gray-800">
+                    <div class=" flex items-center gap-3">
                         <img class="w-10 rounded-full"
                             src="https://pbs.twimg.com/profile_images/1767351110228918272/3Pndc5OT_normal.png" alt="">
                         <div>
@@ -353,12 +349,11 @@
                             <div class="text-sm text-gray-400 text-[13px]">@vercel</div>
                         </div>
                     </div>
-                    <div
-                        class="border px-5 py-1 flex items-center rounded-full bg-white text-black cursor-pointer font-bold">
+                    <div class="px-5 py-1 flex items-center rounded-full bg-white text-black cursor-pointer font-bold">
                         Follow
                     </div>
                 </div>
-                <div class=" py-2 px-3 flex justify-between items-center">
+                <div class=" py-2 px-3 flex justify-between items-center hover:bg-gray-800">
                     <div class="flex items-center gap-3">
                         <img class="w-10 rounded-full"
                             src="https://pbs.twimg.com/profile_images/1785867863191932928/EpOqfO6d_normal.png" alt="">
@@ -367,12 +362,11 @@
                             <div class="text-sm text-gray-400 text-[13px]">@reactjs</div>
                         </div>
                     </div>
-                    <div
-                        class="border px-5 py-1 flex items-center rounded-full bg-white text-black cursor-pointer font-bold">
+                    <div class=" px-5 py-1 flex items-center rounded-full bg-white text-black cursor-pointer font-bold">
                         Follow
                     </div>
                 </div>
-                <div class=" py-2 px-3 flex justify-between items-center">
+                <div class=" py-2 px-3 flex justify-between items-center hover:bg-gray-800">
                     <div class="flex items-center gap-3">
                         <img class="w-10 rounded-full"
                             src="https://pbs.twimg.com/profile_images/1919407210704113664/Hs_UDhmI_normal.png" alt="">
@@ -388,6 +382,22 @@
                     </div>
                 </div>
                 <div class="text-blue-800 hover:underline cursor-pointer px-3 pt-3">Show more</div>
+            </div>
+
+            <div class="terms sticky top-[100vh] text-gray-500 w-3/4 m-3 py-5 text-[12px] px-5">
+                <span class="hover:underline cursor-pointer m-2">Terms of Service</span>
+                |
+                <span class="hover:underline cursor-pointer m-2"> Privacy Policy</span>
+                |
+                <span class="hover:underline cursor-pointer m-2">Cookie Policy</span>
+                |
+                <span class="hover:underline cursor-pointer m-2">Accessibility</span>
+                |
+                <span class="hover:underline cursor-pointer m-2">Ads info</span>
+                |
+                <span class="hover:underline cursor-pointer m-2"> More....
+                    © 2025 X Corp.</span>
+
             </div>
         </div>
     </div>
